@@ -1,0 +1,25 @@
+/target/
+
+# Local investigation workspace and retained analysis evidence
+/investigation.cany/
+*.cany
+
+# GUI/runtime captures, transient environments and saves
+/validation/native/
+**/__pycache__/
+*.py[cod]
+*.epz
+*.sav
+*.log
+/validation/corpus/rust-v1-seeds-*.ndjson
+/validation/corpus/rust-v1-seeds-*-report.json
+/validation/corpus/rust-v1-seeds-*-manifest.json
+/validation/corpus/rust-v1-seeds-*-summary.json
+
+# Local developer state and credentials
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+.DS_Store
