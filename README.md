@@ -2,6 +2,10 @@
 
 A native Rust reimplementation of the 6×6 logic puzzle. The workspace provides a shared rules/session/storage layer used by three executables: an eframe GUI, a line-oriented CLI, and an MCP server over stdio. No browser or network service is required.
 
+![Screenshot of the native Rust puzzle GUI showing the 6×6 candidate grid and relation clues](docs/screenshots/einstein-puzzle.png)
+
+*The screenshot shows the vector-themed GUI with seed 42 at 1024×768; the interface labels are currently in French.*
+
 ## Attribution and licensing
 
 The reference game is Einstein Puzzle, originally credited to Flowix Games (© 2003–2005); the public C++ source used for comparative study credits Flowix and notes modifications by Jordan Evens (2012). This repository is a Rust reconstruction and does not bundle the upstream executable. The repository's existing license is **GPL-2.0-or-later**; no MIT relicensing is supported by the available rights record. The bundled 40 classic-theme bitmaps are credited to Alexander Babichev / Flowix under GPL-2-or-later. See their verbatim Debian copyright notice and checksums in the [asset provenance record](assets/classic/README.md), the English [asset license summary](ASSETS_LICENSES.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
