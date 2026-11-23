@@ -1,0 +1,19 @@
+[package]
+name = "einstein-adapters"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+einstein-core = { path = "../einstein-core" }
+einstein-storage = { path = "../einstein-storage" }
+serde_json = "=1.0.154"
+
+[[bin]]
+name = "einstein-cli"
+path = "src/bin/einstein-cli.rs"
+
+[[bin]]
+name = "einstein-mcp"
+path = "src/bin/einstein-mcp.rs"
